@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="
+	width=device-width,initial-scale=1">
+	<title>Quiz 2</title>
+	<!-- ADD GOOGLE FONT LINKS -->
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+
+		body {
+			background-color: #e6ccb3;
+			color:saddlebrown;
+		}
+
+		.header{
+			background-color: burlywood;
+			text-align: center;
+			margin: 20%;
+		}
+        /*style for the form */
+		.login {
+			background-color:  #f2e6d9;
+			margin: 20px 70px;
+			/*margin-left: 20%;
+			margin-right: 20%;*/
+			padding: 10px;
+			border: 4px solid #996633;
+			border-radius: 36px;
+			text-align: center;
+			content: 5px solid #996633 ;
+		}
+
+		.login-img {
+			width: 30px;
+			border:10px solid coral;
+		    border-radius: 26px;
+		}
+
+		.footer {
+			text-align: center;
+			margin: 20%;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- HEADER -->
+	<div class="login">
+		<h1>Welcome to my Page!</h1>
+	</div>
+
+	<!-- WEB FORM -->
+	<div class="login">
+		<form>
+			<img src="data:image/jpeg;base64,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" class="login">
+
+			<strong>
+				<legend>LOGIN</legend>
+				<b>
+			<br/>
+			<label>Username</label>
+            <input type="" name="">
+            <br/>
+
+            <label>Email</label>
+            <input type="" name="">
+            <br/>
+
+            <label>Password</label>
+            <input type="" name="">
+            <br/>
+            <input type="submit" value="submit">
+        		<input type="reset" value="reset">
+            <br/>
+
+        </strong>
+		</form>
+	</div>
+
+	<!-- FOOTER -->
+	<div class="login">
+
+		<h4>Cerinne Kimberlee S. Olmedo</h4>
+		<h4>9-Ruby</h4>
+
+	</div>
